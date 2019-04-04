@@ -31,6 +31,12 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bcrypt', '~> 3.1.7'
 #目前最流行的跨域认证解决方案
 gem 'jwt'
+# 序列化返回的json
+gem 'active_model_serializers', '~> 0.10.0'
+# 分页
+gem 'will_paginate', '~> 3.1.0'
+#无序数据
+gem 'faker'
 
 group :development, :test do
   #测试
