@@ -52,7 +52,10 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
    # add `FactoryBot` methods
   config.include FactoryBot::Syntax::Methods
-  config.include RequestSpecHelper, type: :request
+  # 引入请求模块
+  config.include RequestSpecHelper
+  # 用户请求登陆验证模块
+  config.include ControllerSpecHelper
 
   # 测试数据用完后删除，使其测试速度变快
   config.before(:suite) do
